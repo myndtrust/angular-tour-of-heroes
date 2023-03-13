@@ -6,7 +6,8 @@
     "start": "node server.js",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "heroku-postbuild": "ng build — prod"
   },
   "private": true,
   "dependencies": {
@@ -41,7 +42,8 @@
     "karma-jasmine-html-reporter": "~1.7.0",
     "typescript": "~4.4.3",
   },
-  "engines": 
-  { "node": "16.13.0", 
-    "npm": "8.1.0" },
+  "engines": {
+    "node": "16.13.0", 
+    "npm": "8.1.0"
+  }
 }
